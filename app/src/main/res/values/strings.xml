@@ -4,4 +4,9 @@
     <string name="sub_app_title">ON GOING ALL OUT</string>
     <string name="moto">Find a team in your city and dominate the league</string>
     <string name="button_text">GET STARTED</string>
+    <string name="league_text">Desired Leagues</string>
+    <string name="men">Men</string>
+    <string name="women">Women</string>
+    <string name="coed">Co-ed</string>
+    <string name="next">Next</string>
 </resources>
