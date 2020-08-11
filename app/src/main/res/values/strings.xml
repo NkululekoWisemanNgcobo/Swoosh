@@ -9,4 +9,8 @@
     <string name="women">Women</string>
     <string name="coed">Co-ed</string>
     <string name="next">Next</string>
+    <string name="beginner">Beginner</string>
+    <string name="baler">Baler</string>
+    <string name="finish">Finish</string>
+    <string name="message">I am a:</string>
 </resources>
