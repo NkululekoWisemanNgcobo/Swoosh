@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LeagueActivity">
+    tools:context=".controller.LeagueActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -58,22 +58,24 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4">
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/mensLeagueButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onMensClick"
             android:text="@string/men"
             android:textColor="#FFFFFF"
             android:textOff="@string/men"
             android:textOn="@string/men" />
 
         <ToggleButton
-            android:id="@+id/toggleButton2"
+            android:id="@+id/womensLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onWomensClick"
             android:text="@string/women"
             android:textColor="#FFFFFF"
             android:textOff="@string/women"
@@ -82,10 +84,11 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <ToggleButton
-            android:id="@+id/toggleButton3"
+            android:id="@+id/coedLeagueBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onCoedClick"
             android:text="@string/coed"
             android:textColor="#FFFFFF"
             android:textOff="@string/coed"

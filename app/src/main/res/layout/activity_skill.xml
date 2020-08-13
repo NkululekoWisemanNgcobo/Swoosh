@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SkillActivity">
+    tools:context=".controller.SkillActivity">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -58,24 +58,26 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ToggleButton
-            android:id="@+id/toggleButton6"
+            android:id="@+id/beginnerBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="beginnerOnCLick"
             android:text="@string/beginner"
             android:textColor="#FFFFFF"
             android:textOff="@string/beginner"
-            android:textOn="@string/beginner"
-            android:layout_marginEnd="16dp" />
+            android:textOn="@string/beginner" />
 
         <ToggleButton
-            android:id="@+id/toggleButton5"
+            android:id="@+id/balerBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="balerOnClick"
             android:text="@string/baler"
             android:textColor="#FFFFFF"
             android:textOff="@string/baler"
@@ -83,10 +85,11 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/finishBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/swoosh_button"
+        android:onClick="finishOnClick"
         android:text="@string/finish"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
